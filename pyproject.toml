@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "config-cli"
+version = "0.1.0"
+description = ""
+authors = ["sashank_tirumala <stsashank6@gmail.com>"]
+readme = "README.md"
+packages = [{include = "config_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
