@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "yaml_config_override"
-version = "0.1.1"
+version = "0.2"
 description = "Easy overriding of YAML configs"
 authors = ["sashank_tirumala <stsashank6@gmail.com>"]
 readme = "README.md"
