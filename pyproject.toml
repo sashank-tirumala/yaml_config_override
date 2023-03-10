@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "config-cli"
-version = "0.1.0"
+name = "yaml_config_override"
+version = "0.1.1"
 description = ""
 authors = ["sashank_tirumala <stsashank6@gmail.com>"]
 readme = "README.md"
