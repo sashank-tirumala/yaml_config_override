@@ -12,7 +12,7 @@ outer:
 ```
 then you can use it in the code `main.py`:
 ```python
-from config_cli import add_arguments
+from yaml_config_override import add_arguments
 import yaml
 from pathlib import Path
 my_config_path = 'test.yaml'
@@ -31,7 +31,7 @@ Your program output will be:
 
 Alternatively if you want to pass the config file as a command line argument you can modify the code as follows:
 ```python
-from config_cli import add_arguments
+from yaml_config_override import add_arguments
 conf = add_arguments()
 ```
 
