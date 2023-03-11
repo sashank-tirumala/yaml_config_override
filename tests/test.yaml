@@ -1,0 +1,6 @@
+outer:
+    x: 0
+    inner:
+        y: 1
+        eveninner:
+            z: abc
