@@ -1,6 +1,14 @@
 # YAML CONFIG OVERRIDE
+## Why?
 YAML Config Override is an extremely lightweight command line interface to your YAML configuration file.
-Just create a yaml config file, and yaml_config_override will add command line arguments to it automatically.
+Just create a yaml config file, and yaml_config_override will add command line arguments to it automatically. No need to write hundreds of argparse lines!
+
+## Installation:
+```bash
+pip install yaml_config_overrid
+```
+
+## Example?
 Suppose you have a YAML file `test.yaml`:
 ```yaml
 outer:
