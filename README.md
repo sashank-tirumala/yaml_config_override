@@ -1,6 +1,6 @@
-# Config CLI
-Config_CLI is an extremely lightweight command line interface to your YAML configuration file.
-Just create a yaml config file, and config_CLI will add command line arguments to it automatically.
+# YAML CONFIG OVERRIDE
+YAML Config Override is an extremely lightweight command line interface to your YAML configuration file.
+Just create a yaml config file, and yaml_config_override will add command line arguments to it automatically.
 Suppose you have a YAML file `test.yaml`:
 ```yaml
 outer:
