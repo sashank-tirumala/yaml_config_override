@@ -5,7 +5,7 @@ Just create a yaml config file, and yaml_config_override will add command line a
 
 ## Installation:
 ```bash
-pip install yaml_config_overrid
+pip install yaml_config_override
 ```
 
 ## Example?
