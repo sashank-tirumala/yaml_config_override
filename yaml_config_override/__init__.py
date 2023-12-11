@@ -17,6 +17,16 @@ def update(diction, path, val):
     else:
         diction[path[0]] = val
         return None
+    
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ("yes", "true", "t", "y", "1"):
+        return True
+    elif v.lower() in ("no", "false", "f", "n", "0"):
+        return False
+    else:
+        raise argparse.ArgumentTypeError("Boolean value expected for argument.")
 
 
 def add_arguments(conf1=None):
@@ -44,7 +54,10 @@ def add_arguments(conf1=None):
             args_to_create["--" + str(cur)] = type(cur_call)
 
     for key, val in args_to_create.items():
-        parser.add_argument(key, type=val, required=False)
+        if val == bool:
+            parser.add_argument(key, type=str2bool, required=False)
+        else:
+            parser.add_argument(key, type=val, required=False)
     args = vars(parser.parse_args())
     for key, val in args_to_create.items():
         ckey = key[2:]
@@ -52,4 +65,3 @@ def add_arguments(conf1=None):
             _list = ckey.split(".")
             update(conf, _list, args[ckey])
     return conf
-
