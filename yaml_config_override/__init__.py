@@ -60,7 +60,7 @@ def add_arguments(conf1=None):
             parser.add_argument(key, type=val, required=False)
     args = vars(parser.parse_args())
     for key, val in args_to_create.items():
-        ckey = key[2:]
+        ckey = key[2:].replace('-','_')
         if args[ckey] is not None:
             _list = ckey.split(".")
             update(conf, _list, args[ckey])
